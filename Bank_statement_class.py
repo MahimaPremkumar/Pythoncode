@@ -1,5 +1,5 @@
 # class Customers:
-#     bankname= "MAHI Bank"
+#     bankname= "HDFS Bank"
     
 #     def __init__(self, name, account_no,balance=0.0):
 #         self.name= name
@@ -44,7 +44,7 @@
 
 
 # class bankstatement():
-#     bankname= "MAHI Bank"  
+#     bankname= "HDFS Bank"  
     
 #     def __init__(self,name,account_no,balance=0.0):
 #         self.name= name
@@ -93,32 +93,8 @@
 #         print("The given output is irrelavent")
 
 
-class bankstatement():
-    bankname= "HDFC Bank"
 
-    def __init__(self,name,account_no,balance=0.0):
-        self.name= name
-        self.account_no= account_no
-        self.balance= balance
-    def deposit(self,balance):
-        self.balance+=self.amount
-        print("The balance amount",balance)
-    def withdraw(self):
-        if amount>self.balance:
-            print("Insufficient balance")
-        else:
-            self.balance-=amount
-            print("The withdrawed amount is",amount)
-            print("The balance amount is",self.balance)
-    def balance(self):
-        print("The current balance is",self.balance)
-    data=bankstatement(name,account_no)
-    while True:
-        print("d-deposit\nw-withdraw\nb-balance\ne-exit")
-        options=input("Enter the option to be performed")
-        if options=="d":
-            amount=float(input("Enter the amount to be deposited:"))
-            data.deposit(amount)
+    
 
 
 
